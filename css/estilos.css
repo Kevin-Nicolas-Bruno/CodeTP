@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.logo{
+  width: 300px;
+}
+body {
+  margin: 10px;
+  background-color: rgb(255, 212, 71);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+.modal-video{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: rgb(143, 143, 143);
+  
+}
+.contenido-izquierda, video{
+  display: flex;
+  height: 300px; 
+}
+.contenido-derecha{
+  margin-top: 80px;
+  margin-left: 30px;
+  width: 500px;
+  height: 200px;
+}
+.contenido-derecha, p{
+  margin-top: 20px;
+}
+.abrir-modal {
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: rgb(63, 63, 63);
+  color: white;
+}
+.modal{
+  position: fixed;
+  padding: 1rem;
+  background-color: gray;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+}
+.modal-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.50s ease-in;
+}
+.modal.visible{
+  visibility: visible;
+  opacity: 1;
+}
+.contenido-derecha h1, p{
+  color: white;
+}
+@media screen and (max-width: 480px) {
+header{
+  display: none; 
+}
+
+
+  table {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  table td[data-tabla] {
+    display: flex;
+  }
+  table td[data-tabla]::before {
+    content: attr(data-tabla);
+    width: 100px;
+    color: black;
+    font-weight: bold;
+  }
+  table td,
+  table th {
+    border: none;
+  }
+  table thead {
+    display: none;
+  }
+  .modal-video{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    }
+    .contenido-derecha{
+      width: 700px;
+    }
+
+}

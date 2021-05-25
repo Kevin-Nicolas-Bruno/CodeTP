@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header><img class="logo" src="img/logo.png" alt="logo"></header>
+    <div class="btn">
+        <button type="button" class="abrir-modal" data-open="modal1">
+            REPRODUCIR
+        </button>
+    </div>
+    <div class="modal-video">
+
+        <div class="contenido-izquierda">
+            <video src="video/El papel de la tecnología en la pandemia.mp4"></video>
+        </div>
+        <div class="contenido-derecha">
+            <h1>El papel de la tecnología en la pandemia</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eos perferendis enim, iure sequi ab ea
+                corrupti mollitia reiciendis dolores neque quod porro sed, itaque nulla et. Voluptatem, quam quis.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div>
+            <section class="modal-contenido">
+                <p><strong>Para salir tienes que apretar la tecla escape</strong></p>
+                <video controls src="video/El papel de la tecnología en la pandemia.mp4"></video>
+            </section>
+            <footer class="modal-footer">
+                <p><strong>Antes de salir pone pausa al video!!</strong></p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
